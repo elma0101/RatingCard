@@ -1,0 +1,190 @@
+/*Start Global Rules */
+:root{
+
+    /* Colors */
+    --bg-orange: hsl(25, 97%, 53%);
+    --bg-white-alpha-4: hsla(0, 0%, 100%, 0.04);
+    --bg-dark-blue: hsl(213, 19%, 18%);
+    --bg-rich-black-fogra-29: hsla(215, 27%, 12%, 1);
+    --bg-very-dark-blue: hsl(216, 12%, 8%);
+
+    /*Text color*/
+
+    --text-white: hsl(0, 0%, 100%);
+    --text-light-gray: hsl(217, 12%, 63%);
+    --text-medium-gray: hsl(216, 12%, 54%);
+    --text-orange: hsl(25, 97%, 53%);
+
+    /*Gradient*/
+
+    --gradient-1: radial-gradient(circle at top, hsla(0, 0%, 100%, 0.05) 0%, transparent 80%);
+
+    /*Typographie*/
+
+    /*font family*/
+    --fontFamily-overpass: 'Overpass', sans-serif;
+    /*font size*/
+    --fontSize-title: 2.4rem;
+    --fontSize-body: 1.4rem;
+
+    /*Border radius*/
+    
+    --radius-pill: 100px;
+    --radius-circle: 50%;
+
+    /*Transition*/
+
+    --transition-1: 100ms ease;
+
+}
+
+/*End Global Rules */
+
+/*Start Reset*/
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li {list-style: none;}
+
+a,img,span,button{
+    display: block;
+}
+
+img{
+    height: auto;
+}
+
+button{
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: var(--bg-very-dark-blue);
+    color: var(--text-light-gray);
+    font-family: var(--fontFamily-overpass);
+    font-size: var(--fontSize-body);
+    line-height: 1.6;
+    padding: 24px;
+    min-height: 100vh;
+    display: grid;
+}
+
+
+/*End Reset*/
+
+/*Start Rating Card*/
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .container{
+    background-color: var(--bg-dark-blue);
+    padding: 20px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.card .container img{
+    background-color: var(--bg-white-alpha-4);
+    border-radius: 40px;
+    padding: 8px;
+}
+
+.card  #ctn2  {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   position: absolute;
+}
+
+.card  #ctn2 #thankyou{
+    width: 150px;
+    position: relative;
+    left: 25%;
+    
+}
+
+.card  #ctn2  p:nth-child(2){
+    text-align: center;
+    padding: 8px 2px ;
+    margin-top: 15px;
+    background-color: var(--bg-white-alpha-4);
+    color: var(--text-orange);
+    border-radius: 20px;
+}
+
+
+.card  #ctn2  p{
+    text-align: center;
+}
+
+.card .container h2{
+    color: var(--text-white);
+    margin: 10px auto;
+}
+
+.card .container .buttons{
+     display: flex;
+    
+}
+
+.card .container .buttons button{
+    
+    background-color: var(--bg-white-alpha-4);
+    border-radius: 40px;
+    padding: 8px 15px;
+    margin-top: 14px ;
+    margin-bottom: 14px;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+
+
+.card .container .buttons button:hover{
+    background-color: var(--text-light-gray);
+}
+
+.card .container .buttons button:focus{
+    background-color: var(--bg-orange);
+}
+
+.card .container input{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-orange);
+    padding: 10px 120px;
+    border: none;
+    border-radius: 20px;
+    color: var(--text-white);
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.card .container input:hover{
+    background-color: var(--text-white);
+    color: var(--text-orange);
+}
+
+/*End Rating Card*/
